@@ -10,7 +10,13 @@ int main()
 	s.push("hello");
 	s.push("world!");
 	s.push("Lin Chen");
-	s.push("Lin Chen Chen");
+	s.push("Lin ChenChen");
+	cout<<s.stack_len()<<":"<<s<<endl;
+	s.insert_back("Liebe","world!");
+	s.insert_front("Cai yunlong","Liebe");
+	s.insert_back("is cute","Lin ChenChen");
+	s.insert_front("C++ primer","hello");
+	//s.delete_elem("Liebe");
 	cout<<s<<endl;
 	while(!s.isempty())
 		cout<<s.pop()<<endl;
@@ -22,8 +28,8 @@ int main()
 	q.assign(test,test+5);
 	cout<<q.front()<<endl; 
 	cout<<q<<":"<<q.Queue_len()<<endl;
-	linklist<int> link;
+	link<int> linklist;
 	for(int i=0;i<10;i++)
-		link.tail_insert(i);
-	cout<<link<<endl;
+		linklist.head_insert(i);
+	cout<<linklist.link_len()<<":"<<linklist<<endl;
 }

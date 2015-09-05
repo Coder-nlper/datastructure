@@ -69,6 +69,11 @@ template <class type> void Queue<type>::pop()//É¾³ı¶ÓÊ×ÔªËØ£¬ÒÀ´ÎÉ¾³ıÖ±µ½¶ÓÁĞÎª¿
 template <class type> void Queue<type>::push(const type &val)//ÀûÓÃÁ´±íµÄÎ²²å·¨½øĞĞÈë¶ÓÁĞ
 {
 	Queueitem<type> *pt=new Queueitem<type>(val);
+	if(NULL==pt)
+	{
+		cerr<<"no memory..."<<endl;
+		exit(1);
+	}
 	if(empty())
 	{
 		head=tail=pt;
