@@ -9,12 +9,7 @@ int main()
 	stackc<string> s;
 	s.push("hello");
 	s.push("world!");
-	s.push("Lin Chen");
-	s.push("Lin ChenChen");
 	cout<<s.stack_len()<<":"<<s<<endl;
-	s.insert_back("Liebe","world!");
-	s.insert_front("Cai yunlong","Liebe");
-	s.insert_back("is cute","Lin ChenChen");
 	s.insert_front("C++ primer","hello");
 	//s.delete_elem("Liebe");
 	cout<<s<<endl;
